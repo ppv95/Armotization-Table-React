@@ -1,12 +1,9 @@
 import React from "react";
-import { Button } from "@material-ui/core";
+import FormCard from "./FormCard";
+import ArmotazationTable from "./ArmotizationTable";
 
 const MainPage = props => {
-  return (
-    <Button variant="contained" color="primary">
-      kLK Mundo
-    </Button>
-  );
+  return <FormCard />;
 };
 
 export default MainPage;

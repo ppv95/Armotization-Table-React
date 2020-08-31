@@ -1,9 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 
-const formCard = () => {
-    return(
-        
-    )
+import {
+  Card,
+  FormControl,
+  InputLabel,
+  Input,
+  TextField,
+  Button
+} from "@material-ui/core";
+
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyle = makeStyles({
+  root: {
+    minWidth: 275
+  },
+  bullet: {
+    display: "inline-block",
+    margin: "0 2px",
+    transform: "scale(0.8)"
+  },
+  title: {
+    fontSize: 14
+  },
+  pos: {
+    marginBottom: 12
+  }
+});
+
+const FormCard = () => {
+  const [classes, setClasses] = useState({ useStyle });
+
+  function handleSumit(event) {
+    event.preventDefault();
+  }
+
+  return (
+    <>
+      <Card variant="outlined" className={classes.root} color="primary">
+        <form
+          onSubmit={handleSumit}
+          form
+          className={classes.root}
+          noValidate
+          autoComplete="off"
+        >
+          <div>
+            <TextField
+              id="cantidad-prestamo"
+              label="Cantidad del prestamo"
+              className={classes.margin}
+            />
+
+            <TextField id="cantidad-prestamo" label="Ingresos mensuales" />
+          </div>
+
+          <br />
+          <div>
+            <TextField id="tasa-input" label="Tasa del interes" />
+          </div>
+
+          <Button variant="outlined" color="primary">
+            Primary
+          </Button>
+          <Button variant="outlined" color="secondary">
+            Secondary
+          </Button>
+        </form>
+      </Card>
+    </>
+  );
 };
 
-export default formCard;
+export default FormCard;
