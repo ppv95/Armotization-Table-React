@@ -7,9 +7,9 @@ import {
   Input,
   TextField,
   Button
-} from "@material-ui/core";
+} from "@mui/material";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 const useStyle = makeStyles({
   root: {
@@ -29,7 +29,7 @@ const useStyle = makeStyles({
 });
 
 const FormCard = () => {
-  const [classes, setClasses] = useState({ useStyle });
+  const classes = useStyle();
 
   function handleSumit(event) {
     event.preventDefault();
