@@ -1,3 +1,44 @@
+# Calculadora de Amortización de Préstamos
+
+Una aplicación web completa para calcular y visualizar tablas de amortización de préstamos, construida con React y Material-UI.
+
+## Características
+
+- **Formulario de entrada intuitivo**: Interfaz amigable para ingresar datos del préstamo
+- **Cálculos precisos**: Algoritmos matemáticos exactos para calcular pagos mensuales y cronogramas de amortización
+- **Tabla de amortización completa**: Visualización detallada de cada pago con desglose de capital e intereses
+- **Resumen del préstamo**: Vista general con totales y métricas importantes
+- **Validación de formularios**: Validación en tiempo real con mensajes de error útiles
+- **Diseño responsivo**: Interfaz adaptable para dispositivos móviles y escritorio
+- **Formato de moneda**: Presentación profesional de cantidades monetarias
+
+## Funcionalidades Implementadas
+
+### 1. Entrada de Datos
+- Cantidad del préstamo ($)
+- Ingresos mensuales ($ - opcional)
+- Tasa de interés anual (%)
+- Plazo del préstamo (años)
+
+### 2. Cálculos Automáticos
+- Pago mensual usando la fórmula PMT estándar
+- Cronograma completo de amortización
+- Desglose de capital vs intereses por pago
+- Total de pagos e intereses a lo largo del préstamo
+
+### 3. Visualización
+- Resumen ejecutivo del préstamo
+- Tabla scrollable con todos los pagos
+- Formato de moneda en español/mexicano
+- Diseño limpio y profesional
+
+## Tecnologías Utilizadas
+
+- **React 16.13**: Framework de interfaz de usuario
+- **Material-UI 4.9**: Biblioteca de componentes de interfaz
+- **JavaScript ES6+**: Lógica de la aplicación
+- **Create React App**: Herramientas de desarrollo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

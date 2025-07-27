@@ -1,14 +1,35 @@
 import React from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { CssBaseline, AppBar, Toolbar, Typography } from "@mui/material";
 import MainPage from "./Components/MainPage";
 
-//import "./App.css";
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#1976d2",
+    },
+    secondary: {
+      main: "#dc004e",
+    },
+    background: {
+      default: "#f5f5f5",
+    },
+  },
+});
 
 function App() {
   return (
-    <>
-      <h1>Test Practice</h1>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">
+            Calculadora de Amortización de Préstamos
+          </Typography>
+        </Toolbar>
+      </AppBar>
       <MainPage />
-    </>
+    </ThemeProvider>
   );
 }
 
